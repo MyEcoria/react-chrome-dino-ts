@@ -13,6 +13,6 @@ RUN pnpm --filter react-chrome-dino-ts build
 RUN pnpm --filter example build
 
 FROM nginx:alpine-slim
-COPY --from=builder /app/apps/example/dist /usr/share/nginx/html
+COPY --from=builder /app/apps/example/dist /usr/share/nginx/html/react-chrome-dino-ts
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
