@@ -21,3 +21,10 @@ function App() {
 ### Forked from
 
 [react-chrome-dino](https://github.com/mhasbini/react-chrome-dino)
+
+## Deployment
+
+This project is a monorepo. To deploy the example app, you must set the build context to the repository root.
+
+- **Build Context**: `.` (Repository Root)
+- **Dockerfile**: `apps/example/Dockerfile`
